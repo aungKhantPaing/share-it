@@ -13,11 +13,8 @@
       <v-chip v-if="!isLoading">{{ questions.length }}</v-chip>
       <v-btn @click="fetchQuestions()">Fetch Items</v-btn>
       <Adsense
-        style="height: 450px;"
-        root-class="wrapper VueAdsense"
-        ins-class="ins-custom"
-        data-ad-client="ca-pub-5442972248172818"
-        data-ad-slot="1487770485"
+        data-ad-client="ca-pub-8777632307115771"
+        data-ad-slot="5846669267"
       />
     </v-flex>
   </v-layout>
