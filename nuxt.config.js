@@ -1,6 +1,10 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  server: {
+    port: 3001 // default: 3000
+    // host: '0.0.0.0' // default: localhost
+  },
   mode: 'spa',
   /*
    ** Headers of the page
@@ -32,7 +36,7 @@ export default {
    */
   plugins: [
     '~/plugins/firebase',
-    { src: '~/plugins/vue-google-adsense', ssr: false }
+    { src: '~/plugins/vue-google-adsense', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -75,5 +79,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  options: {
+    fix: true
   }
 }
