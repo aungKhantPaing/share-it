@@ -12,10 +12,6 @@
       </blockquote>
       <v-chip v-if="!isLoading">{{ questions.length }}</v-chip>
       <v-btn @click="fetchQuestions()">Fetch Items</v-btn>
-      <Adsense
-        data-ad-client="ca-pub-8777632307115771"
-        data-ad-slot="5846669267"
-      />
     </v-flex>
   </v-layout>
 </template>

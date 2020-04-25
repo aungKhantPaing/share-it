@@ -21,7 +21,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [
+      {
+        'data-ad-client': 'ca-pub-8777632307115771',
+        src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+        async: true
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -34,10 +41,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    '~/plugins/firebase',
-    { src: '~/plugins/vue-google-adsense', mode: 'client' }
-  ],
+  plugins: ['~/plugins/firebase'],
   /*
    ** Nuxt.js dev-modules
    */
